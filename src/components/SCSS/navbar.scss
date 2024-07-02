@@ -1,0 +1,25 @@
+.phone-logo{
+    img{
+        height:30px;
+        height:30px;
+        border-radius: 50px;
+    }
+}
+.no{
+    display: flex;
+    height:5vh;
+    padding:2vh 5px 1vh 5px;
+    padding-left: 270px;
+    .phone-logo{
+        flex-basis: 3%;
+    }
+    .phoneno{
+        font-size: 23px;
+        font-weight: bold;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+.navbar-content{
+    height:50px;
+    width:100vw;
+}
