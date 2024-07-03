@@ -1,0 +1,14 @@
+.banner-div{
+    height:80vh;
+    width:100vh;
+}
+.backfootImage{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top:0;
+    left:-500px;
+    transform: rotate(-30deg);
+    z-index: -1;
+    opacity: 0.1;
+}
