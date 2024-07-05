@@ -1,4 +1,4 @@
-
+$lineColor : hsl(43, 83%, 18%);
 .cap-text{
     font-size: 40em;
     margin-top: -190px;
@@ -55,5 +55,5 @@
     font-size: 2em;
     margin-left: -50px;
     font-weight: 800;
-    color: hsl(43, 83%, 18%);
+    color: $lineColor;
 }
