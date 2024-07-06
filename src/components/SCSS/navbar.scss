@@ -1,0 +1,124 @@
+.phone-logo {
+    img {
+        height: 30px;
+        height: 30px;
+        border-radius: 50px;
+    }
+}
+
+.no {
+    display: flex;
+    height: 6vh;
+    padding: 3vh 5px 2vh 5px;
+    padding-left: 270px;
+    margin-bottom: 3vh;
+
+    .phone-logo {
+        flex-basis: 3%;
+    }
+
+    .phoneno {
+        font-size: 23px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+.navbar-content {
+    height: 100px;
+    width: 100vw;
+    background: hsl(27, 29%, 31%);
+
+    .bounds {
+        width: 100vw;
+        z-index: 0;
+        position: absolute;
+        left: 0px;
+        margin-top: 10px;
+        height: 1px;
+        border: 1px dashed hwb(35 28% 20%);
+    }
+
+    .upper-bound {
+        top: 83px;
+    }
+
+    .lower-bound {
+        top: 165px;
+    }
+
+    .right-logo {
+        font-size: 50px;
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+.logo {
+    img {
+        position: absolute;
+        height: 230px;
+        width: 230px;
+        margin-top: -20px;
+        left: 100px;
+        z-index: 2;
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+        animation: swinging 3.5s ease-in-out forwards infinite;
+    }
+}
+
+@keyframes swinging {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-5deg)
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.navbar-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item {
+    padding: 10px;
+    padding-top: 30px;
+    flex-basis: 15%;
+    text-align: justify;
+    .nav-link-left {
+        font-size: 1.1em;
+        line-height: 80%;
+        font-family: Papyrus, fantasy;
+        color: White;
+        font-weight: 100;
+        text-align: center;
+    }
+    .nav-link-right {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        line-height: 80%;
+        font-size: 19px;
+        color:white;
+    }
+}
+
+.right-logo-img{
+    width: 560px;
+    height: 210px;
+    position: absolute;
+    left:1450px;
+    top:-50px;
+}
+
+.navbar-link{
+    text-decoration: none;
+}

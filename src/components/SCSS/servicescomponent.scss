@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.line-container{
+    height:150px;
+    width:2px;
+    background-color: black;
+    border-radius: 20px;
+}
+.block-container{
+    display: flex;
+    margin-top: 100px;
+    padding:50px;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    border-radius: 50px;
+}
+.service-container{
+    width:500px;
+    padding:20px;
+    margin-top: 30px;
+    font-family: 'inter', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    vertical-align: middle;
+}
