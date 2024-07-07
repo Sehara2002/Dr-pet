@@ -48,6 +48,8 @@ $cardbackground: #efcaa8;
 }
 .aboutus-component {
     margin-top: 100px;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
 }
 .about-section {
     height: 50vh;
@@ -155,3 +157,5 @@ $cardbackground: #efcaa8;
         }
     }
 }
+
+

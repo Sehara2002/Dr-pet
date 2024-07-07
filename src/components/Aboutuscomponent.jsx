@@ -3,12 +3,15 @@ import dogImage from "../assets/Images/background2.png"
 import card1 from "../assets/Images/cardimage1.png"
 import card2 from "../assets/Images/cardimage2.png"
 import card3 from "../assets/Images/cardimage3.png"
+import backFoot from "../assets/Images/paw.png"
 function Aboutuscomponent() {
   return (
     <div className="aboutus-component">
       <img src={dogImage} alt="" className="about-image" />
       <div className="container-fluid about-section">
+
         <p className="heading-text">Hello.....!</p>
+
         <p className="heading-text2">
           We Are Sri Lanka's Foremost Full-Service Veterinary Hospital
         </p>
@@ -71,13 +74,16 @@ function Aboutuscomponent() {
                 <div class="card-body">
                   <h3 class="card-title">MOBILE VETERINARY SERVICE</h3>
                   <p class="card-text">Are you finding it difficult to take your pet to the vet? Now you can get your pets treatments and vaccination done at home from our professional team.
-                    </p>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+
     </div>
   )
 }
