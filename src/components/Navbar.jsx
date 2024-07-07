@@ -13,8 +13,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-
-
     const [navState, setNavState] = useState();
     return (
         <div className="container-fluid">
