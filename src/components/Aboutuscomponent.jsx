@@ -15,7 +15,22 @@ function Aboutuscomponent() {
       </div>
       <div className="container-fluid service-summary">
         <div className="container summary-container">
-          
+          <div className="row">
+            <div className="col-sm-6">
+              <p className="summary1">365</p>
+            </div>
+            <div className="col-sm-6">
+              <p className="summary2">24hr</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-6">
+              <p className="summary2 row2">Weekdays & Weekends</p>
+            </div>
+            <div className="col-sm-6">
+              <p className="summary1 row2">Service</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="container-fluid service-section">

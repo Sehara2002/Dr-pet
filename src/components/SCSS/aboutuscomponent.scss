@@ -6,6 +6,32 @@ $desc-text:'Inria Sans';
 $headingFont:'Irish Grover';
 $headingColor:#664D38;
 $heading2Font:'Itim';
+
+@mixin summary-text1{
+    font:{
+        size:5em;
+        weight:800;
+        family:'Impact',sans-serf;
+    }
+    letter-spacing: 2px;
+    text:{
+        align:center;
+    }
+    color:#B06425;
+}
+
+@mixin summary-text2{
+    font:{
+        size:5em;
+        weight:800;
+        family:'Impact',sans-serf;
+    }
+    letter-spacing: 2px;
+    text:{
+        align:center;
+    }
+    color:black;
+}
 .about-image{
     height:100vh;
     position: absolute;
@@ -17,26 +43,61 @@ $heading2Font:'Itim';
 }
 .about-section{
     height: 50vh;
-    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3));
     margin-top: 100px;
     text-align: center;
     padding:50px;
     .heading-text{
-        font-family:$headingFont;
-        font-size: 3em;
+        font:{
+            family:$headingFont;
+            size:3em;
+        }
         color:$headingColor;
     }
     .heading-text2{
-        font-family: $heading2Font;
-        font-size: 3em;
+        font:{
+            family:$heading2Font;
+            size:3em;
+        }
         color:$headingColor;
     }
     .description-text{
-        margin-top: 50px;
         font-family: $desc-text;
         font-size: 1.3em;
         width:80%;
-        margin-left: auto;
-        margin-right: auto;
+        margin:{
+            top:50px;
+            left:auto;
+            right:auto;
+        }
+    }
+}
+.summary-container{
+    width:60vw;
+    height:40vh;
+    margin:{
+        left:30vw;
+        top:50px;
+    }
+    border:{
+        radius:50px;
+    }
+    padding:80px;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+
+    .summary1{
+        @include summary-text1();
+    }
+    .summary2{
+        @include summary-text2();
+    }
+
+    .row2{
+        font:{
+            size: 2em;
+            weight:400;
+        }
+        letter-spacing: 2px;
+        
     }
 }
