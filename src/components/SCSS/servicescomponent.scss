@@ -17,8 +17,12 @@
     width:500px;
     padding:20px;
     margin-top: 30px;
-    font-family: 'inter', sans-serif;
-    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
     text-align: center;
     vertical-align: middle;
+}
+.service-container:first-child{
+    padding-top:0;
 }

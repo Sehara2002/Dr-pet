@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$desc-text:'Inria Sans';
+$headingFont:'Irish Grover';
+$headingColor:#664D38;
+$heading2Font:'Itim';
+.about-image{
+    height:100vh;
+    position: absolute;
+    left:0;
+    z-index: -1;
+}
+.aboutus-component{
+    margin-top: 100px;
+}
+.about-section{
+    height: 50vh;
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    margin-top: 100px;
+    text-align: center;
+    padding:50px;
+    .heading-text{
+        font-family:$headingFont;
+        font-size: 3em;
+        color:$headingColor;
+    }
+    .heading-text2{
+        font-family: $heading2Font;
+        font-size: 3em;
+        color:$headingColor;
+    }
+    .description-text{
+        margin-top: 50px;
+        font-family: $desc-text;
+        font-size: 1.3em;
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
