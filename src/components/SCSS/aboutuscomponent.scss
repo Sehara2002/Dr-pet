@@ -1,103 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-$desc-text:'Inria Sans';
-$headingFont:'Irish Grover';
-$headingColor:#664D38;
-$heading2Font:'Itim';
-
-@mixin summary-text1{
-    font:{
-        size:5em;
-        weight:800;
-        family:'Impact',sans-serf;
+$desc-text: "Inria Sans";
+$headingFont: "Irish Grover";
+$headingColor: #664d38;
+$heading2Font: "Itim";
+$cardbackground: #efcaa8;
+@mixin heading-text2 {
+    font: {
+        family: $heading2Font;
+        size: 3em;
+    }
+    text-align: center;
+    color: $headingColor;
+}
+@mixin summary-text1 {
+    font: {
+        size: 5em;
+        weight: 800;
+        family: "Impact", sans-serf;
     }
     letter-spacing: 2px;
-    text:{
-        align:center;
+    text: {
+        align: center;
     }
-    color:#B06425;
+    color: #b06425;
 }
 
-@mixin summary-text2{
-    font:{
-        size:5em;
-        weight:800;
-        family:'Impact',sans-serf;
+@mixin summary-text2 {
+    font: {
+        size: 5em;
+        weight: 800;
+        family: "Impact", sans-serf;
     }
     letter-spacing: 2px;
-    text:{
-        align:center;
+    text: {
+        align: center;
     }
-    color:black;
+    color: black;
 }
-.about-image{
-    height:100vh;
+.about-image {
+    height: 100vh;
     position: absolute;
-    left:0;
+    left: 0;
     z-index: -1;
 }
-.aboutus-component{
+.aboutus-component {
     margin-top: 100px;
 }
-.about-section{
+.about-section {
     height: 50vh;
-    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3));
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
     margin-top: 100px;
     text-align: center;
-    padding:50px;
-    .heading-text{
-        font:{
-            family:$headingFont;
-            size:3em;
+    padding: 50px;
+    .heading-text {
+        font: {
+            family: $headingFont;
+            size: 3em;
         }
-        color:$headingColor;
+        color: $headingColor;
     }
-    .heading-text2{
-        font:{
-            family:$heading2Font;
-            size:3em;
-        }
-        color:$headingColor;
+    .heading-text2 {
+        @include heading-text2();
     }
-    .description-text{
+    .description-text {
         font-family: $desc-text;
         font-size: 1.3em;
-        width:80%;
-        margin:{
-            top:50px;
-            left:auto;
-            right:auto;
+        width: 80%;
+        margin: {
+            top: 50px;
+            left: auto;
+            right: auto;
         }
     }
 }
-.summary-container{
-    width:60vw;
-    height:40vh;
-    margin:{
-        left:30vw;
-        top:50px;
+.summary-container {
+    width: 60vw;
+    height: 40vh;
+    margin: {
+        left: 30vw;
+        top: 50px;
     }
-    border:{
-        radius:50px;
+    border: {
+        radius: 50px;
     }
-    padding:80px;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    padding: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 
-    .summary1{
+    .summary1 {
         @include summary-text1();
     }
-    .summary2{
+    .summary2 {
         @include summary-text2();
     }
 
-    .row2{
-        font:{
+    .row2 {
+        font: {
             size: 2em;
-            weight:400;
+            weight: 400;
         }
         letter-spacing: 2px;
-        
+    }
+}
+
+.service-section {
+    padding: 100px;
+    margin: {
+        top: 100px;
+        bottom: 100px;
+    }
+    .title {
+        @include heading-text2();
+    }
+}
+
+.card-container {
+    padding: 50px;
+    .card {
+        width: 20vw;
+        height: 50vh;
+        background-color: $cardbackground;
+        border: 0px;
+        border: {
+            radius: 30px;
+        }
+        box-shadow:
+            0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .card-image {
+            object-fit: fill;
+        }
+
+        .card-title {
+            @include summary-text1();
+            font-size: 2em;
+            letter-spacing: 3px;
+            margin: {
+                top: 10px;
+                bottom: 10px;
+            }
+        }
+
+        .card-text {
+            font-family: $heading2Font;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .text1, .text2{
+            margin-top: 40px;
+        }
     }
 }
