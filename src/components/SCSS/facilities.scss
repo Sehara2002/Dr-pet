@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+$desc-text: "Inria Sans";
+$headingFont: "Irish Grover";
+$headingColor: #664d38;
+$heading2Font: "Itim";
+$cardbackground: #efcaa8;
+@mixin heading-text2 {
+    font: {
+        family: $heading2Font;
+        size: 3em;
+    }
+    text-align: center;
+    color: $headingColor;
+}
+
+.facility-section{
+    height:100vh;
+    background-color: #ffeedd;
+    padding:50px;
+}
+
+.round1{
+    margin-top: 50px;
+    left:0px;
+    position: absolute;
+    height:80vh;
+    width:550px;
+    left:0;
+}
+.rabbit-image{
+    position: absolute;
+    left:0;
+    object-fit: fill;
+    margin-top: 75px;
+    width:500px;
+    height:75vh;
+    filter: grayscale(80%);
+}
+.facility-container-title{
+    @include heading-text2();
+}
