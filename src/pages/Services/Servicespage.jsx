@@ -3,6 +3,7 @@ import "../../components/CSS/services.css"
 import Navbar from '../../components/Navbar'
 import Servicebanner from "../../components/Servicebanner"
 import Servicecards from '../../components/Servicecards'
+import Serviceappointment from '../../components/Serviceappointment'
 
 function Servicespage() {
   return (
@@ -10,6 +11,7 @@ function Servicespage() {
          <Navbar/>
          <Servicebanner/>
          <Servicecards/>
+         <Serviceappointment/>
     </div>
   )
 }
