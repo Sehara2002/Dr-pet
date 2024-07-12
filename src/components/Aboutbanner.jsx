@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/CSSAboutbnr.css'
+import './CSS/CSSAboutbnr.css'
 import about2 from "../assets/Images/about2.png"
 import about3 from "../assets/Images/about3.png"
 import about1 from "../assets/Images/about1.png"
