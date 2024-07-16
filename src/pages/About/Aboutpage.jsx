@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Navbar from "../../components/Navbar"
+import Aboutbanner from "../../components/Aboutbanner"
 function Aboutpage() {
   return (
-    <div>Aboutpage</div>
+    <div>
+      <Navbar />
+      <Aboutbanner />
+    </div>
   )
 }
 
