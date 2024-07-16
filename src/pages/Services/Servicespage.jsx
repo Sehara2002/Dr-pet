@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../components/CSS/services.css"
+import "../../components/SCSS/services.scss"
 import Navbar from '../../components/Navbar'
 import Servicebanner from "../../components/Servicebanner"
 import Servicecards from '../../components/Servicecards'

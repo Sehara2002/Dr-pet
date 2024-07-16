@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CSS/servicebanner.css"
+import "./SCSS/servicebanner.scss"
 import sb1 from "../assets/Images/sb1.png"
 import sb3 from "../assets/Images/sb3.png"
 

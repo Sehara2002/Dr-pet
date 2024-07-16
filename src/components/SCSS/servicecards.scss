@@ -1,4 +1,4 @@
-.cards{
+.cards {
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
@@ -7,13 +7,13 @@
     justify-content: space-between;
     padding-top: 100px;
     padding-bottom: 55px;
-    align-items:flex-start;
+    align-items: flex-start;
     border-top: dashed black 2px;
-}
-
-.card{
+  }
+  
+  .card {
     height: auto;
-    border-radius:0;
+    border-radius: 0;
     box-shadow: 0 6px 5px 0px;
     border-color: #ccc;
     width: 30%;
@@ -26,14 +26,13 @@
     font-size: 1.1em;
     font-weight: 500;
     font-size: 1.5vw;
-}
-
-.card p{
-    margin-top: 5%;
-}
-
-.Cs{
+  
+    p {
+      margin-top: 5%;
+    }
+  }
+  
+  .Cs {
     background-color: rgba(250, 240, 230, 0.6);
-}
-
-
+  }
+  

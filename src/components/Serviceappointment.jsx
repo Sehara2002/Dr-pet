@@ -1,6 +1,7 @@
 import React from 'react'
-import "./CSS/serviceappointment.css"
+import "./SCSS/serviceappointment.scss"
 import sa1 from "../assets/Images/sa1.png"
+import { Link } from "react-router-dom";
 
 function Serviceappointment(){
     return(
@@ -8,9 +9,15 @@ function Serviceappointment(){
             <div className='app-content'>
                 <img src={sa1} className="app-c-img"/>
                 <div className="app-c-desc">
-                    <h3 className="app-c-desc-option">Register New Pet</h3>
-                    <h3 className="app-c-desc-option">Make an Appointment</h3>
-                    <h3 className="app-c-desc-option">Contact Our Team</h3>
+                    <Link className="app-c-desc-option" to="/">
+                        <span className='box'>Register New Pet</span>
+                    </Link>
+                    <Link className="app-c-desc-option" to="/appointment">
+                        <span className='box'>New Appointment</span>
+                    </Link>
+                    <Link className="app-c-desc-option" to="/contact">
+                        <span className='box'>Contact Our Team</span>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CSS/servicecards.css"
+import "./SCSS/servicecards.scss"
 import card1 from "../assets/Images/card1.jpg"
 import card2 from "../assets/Images/card2.jpg"
 import card3 from "../assets/Images/card3.jpg"
